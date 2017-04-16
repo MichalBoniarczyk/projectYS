@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/app/css/main.css') }}" />
+        <script   src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script>
+        <script   src="{{ asset('bundles/app/js/main.js') }}"></script>
+
+    </head>
+    <body>
+    <header>
+        <div class="menu">
+            <ul>
+                <li>Women</li>
+                <li>Men</li>
+                <li>Accessories</li>
+                <li>Shoes</li>
+            </ul>
+            <ul>
+                <li><a href="/cart">Go to Checkout (0)</a></li>
+            </ul>
+        </div>
+    </header>
+        {% block body %}{% endblock %}
+    <footer>
+        Copyrights
+    </footer>
+
+        {% block javascripts %}{% endblock %}
+
+    </body>
+</html>

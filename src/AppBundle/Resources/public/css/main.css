@@ -1,0 +1,13 @@
+header {
+  border: 1px solid #000;
+  width: 100%; }
+  header ul {
+    list-style: none; }
+    header ul li {
+      display: inline-block; }
+
+footer {
+  border: 1px solid #000;
+  width: 100%; }
+
+/*# sourceMappingURL=main.css.map */
