@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
     <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <title>Shop Centre</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-        <link rel="stylesheet" href="{{ asset('bundles/app/css/main.css') }}" />
-        <script   src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script>
-        <script   src="{{ asset('bundles/app/js/main.js') }}"></script>
-
+        <link rel="stylesheet" href="{{ ('bundles/app/css/main.css') }}" />
     </head>
     <body>
-    <header>
-        <div class="menu">
-            <ul>
-                <li>Women</li>
-                <li>Men</li>
-                <li>Accessories</li>
-                <li>Shoes</li>
+    <header class="header-page">
+        <div class="container">
+          <div class="header-up">
+            <h2 class="logo">ACME STORY</h2>
+            <ul class="basket">
+              <li><a href="#" class="checkoutGo"><span class="bag-icon"><img src="assets/img/icon-bag.svg" alt=""></span><span id="counterT"><script>document.write(localStorage.clickcount);</script></span></a></li>
             </ul>
+          </div>
+          <div class="mobile-icon mobileIcon"><img src="assets/img/icon-hamburger.svg" alt="" class="mobile-icon"> <span>MENU</span></div>
+          <div class="menu mobileMenu">
             <ul>
-                <li><a href="/cart">Go to Checkout (0)</a></li>
+              <li>Women</li>
+              <li>Men</li>
+              <li>Accessories</li>
+              <li>Shoes</li>
             </ul>
+            </div>
         </div>
     </header>
+
+    <div class="site-content">  
         {% block body %}{% endblock %}
+    </div>
+
     <footer>
-        Copyrights
+        <div class="copy-right">Copyrights</div>
     </footer>
 
         {% block javascripts %}{% endblock %}
-
+    <script   src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script>
+    <script   src="{{ ('bundles/app/js/main.js') }}"></script>
     </body>
 </html>

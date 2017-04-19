@@ -1,38 +1,154 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    <div class="product-details">
+        <h2>Sun glass</h2>
+        <img src="assets/img/pic-item.png" class="img-product" alt="">
+        <p class='product-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat venenatis tortor, ut tempus ex aliquam sit amet. Phasellus quis efficitur dui. Mauris non quam eleifend, pretium turpis at, bibendum urna. Suspendisse volutpat ornare elit nec commodo. Curabitur eget nisl eu lectus elementum rutrum. Maecenas facilisis condimentum nunc at accumsan. Nulla aliquet id ante nec rhoncus. Suspendisse pellentesque nec magna at rhoncus. Praesent mi diam, viverra vel purus vitae, condimentum suscipit nibh. Fusce urna libero, pellentesque ut fermentum in, placerat dapibus magna. Aliquam porttitor porta mi, non lacinia turpis sodales vitae. Nulla semper neque vel nibh vulputate, sit amet venenatis lectus blandit. Fusce lacinia accumsan ex sit amet vestibulum. Suspendisse scelerisque fermentum dui.</p>
+        <h3>What is good?</h3>
+        <ul class="product-points-details">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis efficitur dui.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis efficitur dui. Phasellus quis efficitur dui.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        </ul>
 
-    <div id="notifications">
-        <div id="messages"></div>
-        <p>
-        <button id="notify">Notify!</button>
-        </p>
+        <div class="prize"><span>Price:</span> <span class="prize-product prizeProduct">300$</span></div class="prize">
+
+        <div class="product-details-buttons">
+            <div id="notifications" class="notifications">
+                <div id="messages" class="notifyMsg notify-msg"></div>
+                <p>
+                <button id="notify">Notify!</button>
+                </p>
+            </div>
+
+            <div class="addProduct">
+                <button id="addtocart" class="add-to-cart">Add Product to cart</button>
+            </div>
+
+            <div class="removeProduct">
+                <button id="removeFromCart" class="remove-product" disabled>Remove product</button>
+            </div>
+        </div>
     </div>
 
-    <p>
-    <button id="addtocart" >Add Product to cart</button>
-    </p>
+    <div class="checkout checkout-page checkoutPage">
+        <div class="form-checkout first-mobile firstMobile">
+            <div class="frm-checkout-cnt">
+            <div id="thanksMsg" class="thxMsg">
+                <p>Thank you for you shopping :-)</p>
+                <p class="closeWindow">click here to close</p>
+            </div>
+            <form action="" class="frm-checkout frmCheckout" name="myForm">
+                <h3>Delivery address:</h3>
+                <div>
+                    <label for="firstName" class="form-full">First name <span class="circle"></span></label>
+                    <input type="input" name="firstName" id="firstName" class="form-full isNotEmpty">
+                    <span id="errorName" class="error errorName"></span>
+                </div>
 
-    <h1>Some Default index page content</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat venenatis tortor, ut tempus ex aliquam sit amet. Phasellus quis efficitur dui. Mauris non quam eleifend, pretium turpis at, bibendum urna. Suspendisse volutpat ornare elit nec commodo. Curabitur eget nisl eu lectus elementum rutrum. Maecenas facilisis condimentum nunc at accumsan. Nulla aliquet id ante nec rhoncus. Suspendisse pellentesque nec magna at rhoncus. Praesent mi diam, viverra vel purus vitae, condimentum suscipit nibh. Fusce urna libero, pellentesque ut fermentum in, placerat dapibus magna. Aliquam porttitor porta mi, non lacinia turpis sodales vitae. Nulla semper neque vel nibh vulputate, sit amet venenatis lectus blandit. Fusce lacinia accumsan ex sit amet vestibulum. Suspendisse scelerisque fermentum dui.</p>
-    <p>Proin gravida iaculis eros eu commodo. Maecenas non maximus risus. Vestibulum sed justo quam. In finibus turpis lectus. Nam risus libero, tincidunt vitae elit id, vestibulum mollis mi. Fusce ac purus a ligula egestas viverra eget auctor nunc. Pellentesque volutpat felis in feugiat mattis. Proin porta non orci ac hendrerit.</p>
-    <p>Suspendisse bibendum nisi quis libero egestas, et varius mauris pulvinar. Quisque pharetra turpis sit amet nulla congue, id malesuada mauris interdum. Sed maximus eros at urna luctus pharetra. Nunc semper velit sit amet erat luctus, et elementum augue malesuada. Integer ut dolor facilisis, placerat odio iaculis, lobortis ipsum. Curabitur accumsan neque vel lorem hendrerit consectetur. Pellentesque efficitur aliquet tortor vitae tristique. Vestibulum congue rutrum ullamcorper. Sed eget leo faucibus mi cursus ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam aliquam volutpat ornare. Sed et sapien quis urna pulvinar convallis id non ante. Curabitur ut convallis mi, ac pellentesque orci. Proin nec fermentum metus. Pellentesque scelerisque felis sit amet vulputate luctus.</p>
-    <p>Vivamus vel enim sed tortor posuere fermentum et auctor orci. Morbi ante metus, scelerisque in consequat at, fermentum eget massa. Cras facilisis augue id quam commodo, sed faucibus nisi dapibus. Vestibulum rutrum velit quis odio tristique venenatis. Mauris vehicula metus vel ligula fringilla, non ullamcorper urna sagittis. Quisque ultricies interdum nunc consequat volutpat. Suspendisse porta, ante et finibus varius, massa nisl facilisis augue, vitae molestie sem nunc ut mi. Nam ac lacinia quam. Sed leo enim, posuere a cursus sed, ultricies a lorem. Proin vestibulum dictum elit a euismod.</p>
-    <p>Aliquam sapien nisl, faucibus non ullamcorper vitae, efficitur et dui. Nam fringilla ante dui, et dapibus nisi blandit eu. Quisque quam erat, tempor at tellus lobortis, cursus eleifend massa. Nam volutpat porta tempor. Morbi varius libero eget pellentesque dapibus. Sed euismod tempus nisl in euismod. Aliquam non lectus est. Aliquam erat volutpat. Ut vitae vestibulum neque. Donec ultricies ante sit amet iaculis placerat.</p>
+                <div>
+                    <label for="lastName" class="form-full">Last name <span class="circle"></span></label>
+                    <input type="input" name="lastName" id="lastName" class="form-full isNotEmpty">
+                    <span id="errorLastName" class="error errorLastName"></span>
+                </div>
 
-    <h2>Another header</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat venenatis tortor, ut tempus ex aliquam sit amet. Phasellus quis efficitur dui. Mauris non quam eleifend, pretium turpis at, bibendum urna. Suspendisse volutpat ornare elit nec commodo. Curabitur eget nisl eu lectus elementum rutrum. Maecenas facilisis condimentum nunc at accumsan. Nulla aliquet id ante nec rhoncus. Suspendisse pellentesque nec magna at rhoncus. Praesent mi diam, viverra vel purus vitae, condimentum suscipit nibh. Fusce urna libero, pellentesque ut fermentum in, placerat dapibus magna. Aliquam porttitor porta mi, non lacinia turpis sodales vitae. Nulla semper neque vel nibh vulputate, sit amet venenatis lectus blandit. Fusce lacinia accumsan ex sit amet vestibulum. Suspendisse scelerisque fermentum dui.</p>
-    <p>Proin gravida iaculis eros eu commodo. Maecenas non maximus risus. Vestibulum sed justo quam. In finibus turpis lectus. Nam risus libero, tincidunt vitae elit id, vestibulum mollis mi. Fusce ac purus a ligula egestas viverra eget auctor nunc. Pellentesque volutpat felis in feugiat mattis. Proin porta non orci ac hendrerit.</p>
-    <p>Suspendisse bibendum nisi quis libero egestas, et varius mauris pulvinar. Quisque pharetra turpis sit amet nulla congue, id malesuada mauris interdum. Sed maximus eros at urna luctus pharetra. Nunc semper velit sit amet erat luctus, et elementum augue malesuada. Integer ut dolor facilisis, placerat odio iaculis, lobortis ipsum. Curabitur accumsan neque vel lorem hendrerit consectetur. Pellentesque efficitur aliquet tortor vitae tristique. Vestibulum congue rutrum ullamcorper. Sed eget leo faucibus mi cursus ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam aliquam volutpat ornare. Sed et sapien quis urna pulvinar convallis id non ante. Curabitur ut convallis mi, ac pellentesque orci. Proin nec fermentum metus. Pellentesque scelerisque felis sit amet vulputate luctus.</p>
-    <p>Vivamus vel enim sed tortor posuere fermentum et auctor orci. Morbi ante metus, scelerisque in consequat at, fermentum eget massa. Cras facilisis augue id quam commodo, sed faucibus nisi dapibus. Vestibulum rutrum velit quis odio tristique venenatis. Mauris vehicula metus vel ligula fringilla, non ullamcorper urna sagittis. Quisque ultricies interdum nunc consequat volutpat. Suspendisse porta, ante et finibus varius, massa nisl facilisis augue, vitae molestie sem nunc ut mi. Nam ac lacinia quam. Sed leo enim, posuere a cursus sed, ultricies a lorem. Proin vestibulum dictum elit a euismod.</p>
-    <p>Aliquam sapien nisl, faucibus non ullamcorper vitae, efficitur et dui. Nam fringilla ante dui, et dapibus nisi blandit eu. Quisque quam erat, tempor at tellus lobortis, cursus eleifend massa. Nam volutpat porta tempor. Morbi varius libero eget pellentesque dapibus. Sed euismod tempus nisl in euismod. Aliquam non lectus est. Aliquam erat volutpat. Ut vitae vestibulum neque. Donec ultricies ante sit amet iaculis placerat.</p>
+                <div>
+                    <label for="email" class="form-full">Email <span class="circle"></span></label>
+                    <input type="input" name="email" id="emailForm" class="form-full isNotEmpty">
+                    <span id="errorEmail" class="error errorEmail"></span>
+                </div>
 
-    <h3>We want this page even longer</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat venenatis tortor, ut tempus ex aliquam sit amet. Phasellus quis efficitur dui. Mauris non quam eleifend, pretium turpis at, bibendum urna. Suspendisse volutpat ornare elit nec commodo. Curabitur eget nisl eu lectus elementum rutrum. Maecenas facilisis condimentum nunc at accumsan. Nulla aliquet id ante nec rhoncus. Suspendisse pellentesque nec magna at rhoncus. Praesent mi diam, viverra vel purus vitae, condimentum suscipit nibh. Fusce urna libero, pellentesque ut fermentum in, placerat dapibus magna. Aliquam porttitor porta mi, non lacinia turpis sodales vitae. Nulla semper neque vel nibh vulputate, sit amet venenatis lectus blandit. Fusce lacinia accumsan ex sit amet vestibulum. Suspendisse scelerisque fermentum dui.</p>
-    <p>Proin gravida iaculis eros eu commodo. Maecenas non maximus risus. Vestibulum sed justo quam. In finibus turpis lectus. Nam risus libero, tincidunt vitae elit id, vestibulum mollis mi. Fusce ac purus a ligula egestas viverra eget auctor nunc. Pellentesque volutpat felis in feugiat mattis. Proin porta non orci ac hendrerit.</p>
-    <p>Suspendisse bibendum nisi quis libero egestas, et varius mauris pulvinar. Quisque pharetra turpis sit amet nulla congue, id malesuada mauris interdum. Sed maximus eros at urna luctus pharetra. Nunc semper velit sit amet erat luctus, et elementum augue malesuada. Integer ut dolor facilisis, placerat odio iaculis, lobortis ipsum. Curabitur accumsan neque vel lorem hendrerit consectetur. Pellentesque efficitur aliquet tortor vitae tristique. Vestibulum congue rutrum ullamcorper. Sed eget leo faucibus mi cursus ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam aliquam volutpat ornare. Sed et sapien quis urna pulvinar convallis id non ante. Curabitur ut convallis mi, ac pellentesque orci. Proin nec fermentum metus. Pellentesque scelerisque felis sit amet vulputate luctus.</p>
-    <p>Vivamus vel enim sed tortor posuere fermentum et auctor orci. Morbi ante metus, scelerisque in consequat at, fermentum eget massa. Cras facilisis augue id quam commodo, sed faucibus nisi dapibus. Vestibulum rutrum velit quis odio tristique venenatis. Mauris vehicula metus vel ligula fringilla, non ullamcorper urna sagittis. Quisque ultricies interdum nunc consequat volutpat. Suspendisse porta, ante et finibus varius, massa nisl facilisis augue, vitae molestie sem nunc ut mi. Nam ac lacinia quam. Sed leo enim, posuere a cursus sed, ultricies a lorem. Proin vestibulum dictum elit a euismod.</p>
-    <p>Aliquam sapien nisl, faucibus non ullamcorper vitae, efficitur et dui. Nam fringilla ante dui, et dapibus nisi blandit eu. Quisque quam erat, tempor at tellus lobortis, cursus eleifend massa. Nam volutpat porta tempor. Morbi varius libero eget pellentesque dapibus. Sed euismod tempus nisl in euismod. Aliquam non lectus est. Aliquam erat volutpat. Ut vitae vestibulum neque. Donec ultricies ante sit amet iaculis placerat.</p>
+                <div>
+                    <label for="phone" class="form-full">Phone</label>
+                    <input type="input" name="phone" id="phone" class="form-full">
+                </div>
+
+                <div>
+                    <label for="address" class="form-full">Address <span class="circle"></span></label>
+                    <input type="input" name="address" id="address" class="form-full isNotEmpty">
+                    <span id="errorAddress" class="error errorAddress"></span>
+                </div>
+
+                <div>
+                    <label for="addressCont" class="form-full">Address cont.</label>
+                    <input type="input" name="adddressCont" id="addressCont" class="form-full">
+                </div>
+
+                <div>
+                    <label for="zipCode" class="form-full">Zip code <span class="circle"></span></label>
+                    <input type="input" name="zipCode" id="zipCode" class="form-full isNotEmpty">
+                    <span id="errorZipCode" class="error errorZipCode"></span>
+                </div>
+
+                <div>
+                    <label for="city" class="form-full">City <span class="circle"></span></label>
+                    <input type="input" name="city" id="city" class="form-full isNotEmpty">
+                    <span id="errorCity" class="error errorCity"></span>
+                </div>
+
+
+                <div>
+                    <label for="state" class="form-full">State <span class="circle"></span></label>
+                    <input type="input" name="state" id="state" class="form-full isNotEmpty">
+                    <span id="errorState" class="error errorState"></span>
+                </div>   
+
+                <div>
+                    <label for="address" class="form-full isNotEmpty">Country <span class="circle"></span></label>
+                    <select class="form-full classic">
+                      <option value="unitedstates">United States</option>
+                      <option value="poland">Poland</option>
+                      <option value="uk">UK</option>
+                    </select> 
+                </div>
+
+                <h3 class="payment-header">Payment:</h3>
+                <div>
+                    <label for="cardNumber" class="form-full">Card number <span class="circle"></span></label>
+                    <input type="input" name="gender" id="cardNumber" class="form-full isNotEmpty" placeholder="xxxx-xxxx-xxxx-xxxx">
+                    <span id="errorCardNumber" class="error errorCardNumber"></span>
+                </div>
+
+                <div>
+                    <label for="cardHolder" class="form-full">Card holder <span class="circle"></span></label>
+                    <input type="input" name="gender" id="cardHolder" class="form-full isNotEmpty isNotNumber">
+                    <span id="errorCardHolder" class="error errorCardHolder"></span>
+                </div>
+
+
+                <div>
+                    <label for="cvc" class="form-full">CVC <span class="circle"></span></label>
+                    <input type="input" name="gender" id="cvcNumber" class="form-full isNotEmpty" placeholder="xxx">
+                    <span id="errorCVCNumber" class="error errorCVCNumber"></span>
+                </div>  
+            </form>  
+            <button class="form-full buy-btn buyProduct">buy</button>
+            </div>
+        </div>
+        <div class="prodct-checkout-details second-mobile secondMobile">
+            <h3>Your order</h3>
+            <div class="product">
+                <img src="assets/img/pic-item.png" alt="Product" src="product-details-checkout-img" />
+                <div class="product-cnt">
+                    <h2>Sun glass</h2>
+                    <p>Qty: <span id="qtyEl"><script>var qty = localStorage.clickcount; document.write(qty);</script></span></p>
+                    <p>Price: <span><script>var price = 300; document.write(price);</script>$</span></p>
+                </div>
+            </div>
+            <div class="summary-details">
+                <h3>Summary</h3>
+                <p class="subtotal">Shipping: <span><script>var shipping = 20; document.write(shipping);</script>$</span></p>
+                <p>Subtotal: <span id="subtotalEl"><script>document.write(localStorage.clickcount*price);</script></span></p>
+            </div>
+            <hr>
+            <p class="total">Total: <span><span id="qtyEl2"><script>var qtyEl2 = localStorage.clickcount; document.write(qtyEl2);</script></span></p>
+        </div>
+        <div class="product-details-buttons">
+            <button class="backToProduct back-to-product">Back to product page</button>
+        </div>
+    </div>
 
 {% endblock %}
 

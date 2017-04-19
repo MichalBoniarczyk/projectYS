@@ -1,0 +1,27 @@
+{
+  "name": "ys",
+  "version": "1.0.0",
+  "description": "project ys",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichalBoniarczyk/projectYS.git"
+  },
+  "keywords": [
+    "project",
+    "php",
+    "symfony"
+  ],
+  "author": "Michal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichalBoniarczyk/projectYS/issues"
+  },
+  "homepage": "https://github.com/MichalBoniarczyk/projectYS#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
